@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinicmanagement3.PatientDashboardController">
+   <children>
+      <Pane prefHeight="61.0" prefWidth="1280.0" style="-fx-background-color: #184E74;">
+         <children>
+            <Label layoutX="37.0" layoutY="15.0" text="MediCore" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutButton" layoutX="1149.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleLogoutClick" prefHeight="43.0" prefWidth="103.0" style="-fx-background-color: #ffffff;" text="Log out">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="appointmentButton" layoutX="380.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleAppointmentClick" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="Book an&#10;Appointment" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="692.0" layoutY="145.0" mnemonicParsing="false" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="History">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="74.0" layoutY="293.0" mnemonicParsing="false" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="Treatment Plan">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="380.0" layoutY="293.0" mnemonicParsing="false" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="Lab Results">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="viewAppointmentsButton" layoutX="74.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleViewAppointments" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="Appointments">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

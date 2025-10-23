@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinicmanagement3.HelloController">
+   <children>
+      <Pane prefHeight="61.0" prefWidth="1280.0" style="-fx-background-color: #184E74;">
+         <children>
+            <Label layoutX="37.0" layoutY="15.0" text="MediCore" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="91.0" layoutY="110.0" text="SIGN-IN">
+         <font>
+            <Font name="Arial Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="251.0" text="Account Type">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="313.0" text="Username">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="385.0" text="Password">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="accountTypeComboBox" layoutX="660.0" layoutY="256.0" prefHeight="24.0" prefWidth="282.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TextField fx:id="usernameField" layoutX="660.0" layoutY="318.0" prefHeight="24.0" prefWidth="282.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <PasswordField fx:id="passwordField" layoutX="660.0" layoutY="390.0" prefHeight="24.0" prefWidth="282.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></PasswordField>
+      <Button layoutX="700.0" layoutY="650.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: #184E74;" text="Log-In" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="warningLabel" layoutX="445.0" layoutY="620.0" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="425.0" layoutY="650.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: #184E74;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
