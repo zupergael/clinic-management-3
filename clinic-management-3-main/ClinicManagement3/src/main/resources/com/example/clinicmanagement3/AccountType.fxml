@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinicmanagement3.AccountTypeController">
+   <children>
+      <Pane prefHeight="61.0" prefWidth="1280.0" style="-fx-background-color: #184E74;">
+         <children>
+            <Label layoutX="37.0" layoutY="15.0" text="MediCore" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="351.0" layoutY="372.0" text="Account Type:">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="accountTypeComboBox" layoutX="700.0" layoutY="375.0" prefHeight="24.0" prefWidth="282.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="registerButton" layoutX="425.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: #184E74;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="loginButton" layoutX="700.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: #184E74;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="warningLabel" layoutX="500.0" layoutY="484.0" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinicmanagement3.PatientAppointmentController">
+   <children>
+      <Pane prefHeight="61.0" prefWidth="1280.0" style="-fx-background-color: #184E74;">
+         <children>
+            <Label layoutX="37.0" layoutY="15.0" text="MediCore" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutButton" layoutX="1134.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleLogoutClick" prefHeight="43.0" prefWidth="118.0" style="-fx-background-color: #ffffff;" text="Sign Out">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="91.0" layoutY="110.0" text="Book an Appointment">
+         <font>
+            <Font name="Arial Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="217.0" text="Date:">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="284.0" text="Time:">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="352.0" text="Service:">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="appointmentDatePicker" layoutX="482.0" layoutY="223.0" prefHeight="24.0" prefWidth="282.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <ComboBox fx:id="timeComboBox" layoutX="482.0" layoutY="290.0" prefHeight="24.0" prefWidth="282.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="serviceComboBox" layoutX="482.0" layoutY="358.0" prefHeight="24.0" prefWidth="282.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="bookAppointment" layoutX="367.0" layoutY="458.0" mnemonicParsing="false" onAction="#handleBookAppointment" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #184E74;" text="Book Now" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backButton" layoutX="33.0" layoutY="654.0" mnemonicParsing="false" onAction="#handleBackButtonClick" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: #184E74;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="warningLabel" layoutX="270.0" layoutY="564.0" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="successLabel" layoutX="300.0" layoutY="564.0" textFill="#059a07">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appointmentTable" editable="true" layoutX="838.0" layoutY="217.0" prefHeight="442.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="120.0" text="Date" />
+          <TableColumn fx:id="timeColumn" prefWidth="120.0" text="Time" />
+            <TableColumn fx:id="serviceColumn" prefWidth="120.0" text="Service" />
+        </columns>
+      </TableView>
+      <Label fx:id="rescheduleWarningLabel" layoutX="220.0" layoutY="564.0" textFill="BLUE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

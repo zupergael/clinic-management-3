@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinicmanagement3.PatientDashboardController">
+   <children>
+      <Pane prefHeight="61.0" prefWidth="1280.0" style="-fx-background-color: #184E74;">
+         <children>
+            <Label layoutX="37.0" layoutY="15.0" text="MediCore" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutButton" layoutX="1134.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleLogoutClick" prefHeight="43.0" prefWidth="118.0" style="-fx-background-color: #ffffff;" text="Sign out">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="appointmentButton" layoutX="74.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleAppointmentClick" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="Book an&#10;Appointment" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="treatmentPlanButton" layoutX="692.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleTreatmentPlanClick" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="Treatment Plan">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="labResultsButton" layoutX="72.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleLabResults" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="Lab Results">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="viewAppointmentsButton" layoutX="380.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleViewAppointments" prefHeight="108.0" prefWidth="249.0" style="-fx-background-color: #EDF5FF;" text="Manage&#10;Appointments" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="985.0" layoutY="145.0" prefHeight="464.0" prefWidth="272.0" style="-fx-background-color: C1D8F2;">
+         <children>
+            <Label layoutX="21.0" layoutY="22.0" text="Patient's Information">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="65.0" text="Name:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="100.0" text="Age:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="135.0" text="Gender:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="170.0" text="Contact Details:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="205.0" text="Emergency Contact:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="85.0" layoutY="65.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="ageLabel" layoutX="70.0" layoutY="100.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="genderLabel" layoutX="90.0" layoutY="135.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="contactLabel" layoutX="135.0" layoutY="170.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="emergencyLabel" layoutX="160.0" layoutY="205.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="greetingLabel" layoutX="44.0" layoutY="85.0">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
